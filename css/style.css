@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+
+.text {
+  color: brown;
+}
+
+.whyGit .text {
+  color: blue;
+}
+
+.decentralized > p {
+  color: aqua;
+}
+
+.mainBranches p {
+  color: rgb(98, 13, 177);
+}
+
+span.auxiliaryBranches {
+  color: coral;
+}
+
+.auxiliaryBranches h4 {
+  color: rgb(55, 182, 93);
+}
+
+.auxiliaryBranches p {
+  color: rgb(221, 121, 0);
+}
+
+.featureBranches .text {
+  color: rgb(104, 16, 187);
+}
+
+.auxiliaryBranches li {
+  color: darkred;
+}
+
+li.li-1 {
+  color: tomato;
+}
