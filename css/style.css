@@ -1,3 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Lato&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap&subset=cyrillic-ext");
+
+@font-face {
+  font-family: "Amatic SC Bold";
+  src: url("../fonts/AmaticSC-Bold.woff2") format("woff2"),
+    url("../fonts/AmaticSC-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amatic SC Regular";
+  src: url("../fonts/AmaticSC-Regular.woff2") format("woff2"),
+    url("../fonts/AmaticSC-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 *,
 *::before,
 *::after {
@@ -28,42 +49,111 @@ img {
   vertical-align: top;
 }
 
-.text {
-  color: brown;
+.header {
+  text-align: center;
 }
 
-.whyGit .text {
-  color: blue;
+.header h2 {
+  font-weight: 900;
+  font-size: 50px;
 }
 
-.decentralized > p {
+p.episode {
+  text-shadow: 2px 2px 1px rgb(184, 105, 105);
+}
+
+.text-1__part1 p {
+  text-indent: 50px;
+  font-family: "Amatic SC", cursive;
+}
+
+.text-1__part2 .text {
+  letter-spacing: 5px;
+  line-height: 200%;
+}
+
+.text-2 {
+  font-size: 26px;
+}
+
+.text-1,
+.text-2 .text {
+  text-indent: 40px;
+}
+
+.text-2__part1 .text p {
+  text-indent: 70px;
+}
+
+p#uppercase {
+  text-transform: uppercase;
+}
+
+.text-3__part1 p {
+  letter-spacing: 10px;
+  text-shadow: -3px -5px 2px #111;
+  font-family: "Lato", sans-serif;
+}
+
+div.text-4__part1 {
   color: aqua;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 5px -5px 3px rgb(204, 121, 66);
+  text-transform: capitalize;
+  text-decoration: underline;
 }
 
-.mainBranches p {
-  color: rgb(98, 13, 177);
+.text-4__part2 {
+  text-align: center;
+  line-height: 200%;
 }
 
-span.auxiliaryBranches {
-  color: coral;
+.translate {
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
 }
 
-.auxiliaryBranches h4 {
-  color: rgb(55, 182, 93);
+.context {
+  text-transform: uppercase;
+  font-weight: thin;
+  color: rgba(97, 92, 92, 0.774);
 }
 
-.auxiliaryBranches p {
-  color: rgb(221, 121, 0);
+li.link {
+  color: blue;
+  text-decoration: underline;
 }
 
-.featureBranches .text {
-  color: rgb(104, 16, 187);
+.song1 {
+  text-align: center;
 }
 
-.auxiliaryBranches li {
-  color: darkred;
+.song2 {
+  font-size: 24px;
+  /* color: red; */
+  font-family: "Roboto", sans-serif;
 }
 
-li.li-1 {
-  color: tomato;
+.__italic {
+  font-style: italic;
+  font-weight: 500;
+  color: rgba(17, 17, 17, 0.685);
+}
+
+.special__font {
+  font-family: "Amatic SC", cursive;
+}
+
+.text-3__part1 {
+  font-family: "Oswald", sans-serif;
+}
+
+.amatic-Bold {
+  font-family: "Amatic SC Bold";
+}
+
+.amatic-Regular {
+  font-family: "Amatic SC Regular";
 }
