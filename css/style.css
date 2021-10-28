@@ -52,193 +52,299 @@ body {
 }
 
 /* ------------------------------ */
-.services {
-  max-width: 1118px;
-  margin: 0 auto;
-  padding: 30px;
-  margin: 0px 0px 50px 0px;
-}
-.services__title_small {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 24px;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: #5d62b5;
-  margin: 0px 0px 33px 0px;
-}
-.services__title_small::before {
-  content: "";
-  background: url("../img/OverlineMark.svg") top right / 50px no-repeat;
-  width: 16px;
-  height: 17px;
-  padding: 0px 10px 0px 0px;
-}
-.services__title_big {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 42px;
-  color: #000000;
-  margin: 0px 0px 79px 0px;
-}
-.cards {
-}
-.card {
-  max-width: 324px;
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 50px 44px;
-  display: inline-block;
-}
-.card__icon {
-}
-.card__image {
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
-  margin: 0px 0px 33px 0px;
-}
-.card__title {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 19px;
-  line-height: 26px;
-  text-align: center;
-  color: #f2726f;
-  margin: 0px 0px 20px 0px;
-}
-.card__text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.15px;
-  color: #4b4b4b;
-}
 
-.card:nth-child(1):hover {
-  transform: translate(130px, -50px);
-  background-color: rgba(41, 151, 140, 0.493);
-}
-
-.card:nth-child(2):hover {
-  background-color: rgba(37, 167, 80, 0.493);
-  transform: scale(0.7);
-}
-
-.card:nth-child(3):hover {
-  background-color: rgba(117, 167, 37, 0.493);
-  transform: rotate(45deg);
-}
-
-.card:nth-child(4):hover {
-  background-color: rgba(167, 106, 37, 0.493);
-  transform: skew(15deg);
-}
-
-.card:nth-child(5):hover {
-  background-color: rgba(76, 37, 167, 0.493);
-  transform-origin: top left;
-  transform: rotate(45deg);
-}
-
-.card:nth-child(6):hover {
-  background-color: rgba(145, 37, 167, 0.493);
-  transform: translate3d(30px, 30px, 40px);
-}
-
-.block-squares {
-  max-width: 500px;
+.man {
+  width: 500px;
   height: 500px;
-  border: 1px solid #8ca1a5;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  font-size: 0px;
-}
-.block-square {
-  display: inline-block;
-}
-.block-square_square-1 {
-  background: #cee5d0;
-  width: 50%;
-  height: 50%;
-}
-.block-square_square-2 {
-  background: #e0c097;
-  width: 50%;
-  height: 50%;
-}
-.block-square_square-3 {
-  background: #ff7878;
-  width: 50%;
-  height: 50%;
-}
-.block-square_square-4 {
-  background: #f3f0d7;
-  width: 50%;
-  height: 50%;
+  background: url("../img/man/step1.png") 0 0 no-repeat;
+  position: relative;
+  animation: running-man;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-.block-square_square-1:hover {
-  transform-origin: top left;
-  transform: rotate(45deg);
-  border-radius: 51% 49% 19% 81% / 0% 61% 39% 100%;
-  box-shadow: -3px 4px 10px rgb(0, 255, 221);
-}
-.block-square_square-2:hover {
-  transform-origin: top right;
-  transform: rotate(-45deg);
-  border-radius: 100% 0% 19% 81% / 42% 41% 59% 58%;
-  box-shadow: -3px 4px 10px rgb(0, 255, 179);
-}
-.block-square_square-3:hover {
-  transform-origin: bottom left;
-  transform: rotate(-45deg);
-  border-radius: 56% 44% 0% 100% / 50% 100% 0% 50%;
-  box-shadow: -3px 4px 10px rgb(0, 68, 255);
-}
-.block-square_square-4:hover {
-  transform-origin: bottom right;
-  transform: rotate(45deg);
-  border-radius: 56% 44% 0% 100% / 50% 100% 0% 50%;
-  box-shadow: -3px 4px 10px red;
-}
-
-.block-square:hover {
-  transition: all 0.8s ease 0s;
-}
-
-.game {
-  max-width: 1200px;
-  margin: 0 auto;
-  font-size: 0;
-  margin-bottom: 100px;
-}
-.game__title {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 19px;
-  line-height: 26px;
-  text-align: center;
-  color: #f2726f;
-  margin: 0px 0px 20px 0px;
-}
-.game__block {
-  background: url("../img/door-2.png") 0 0 no-repeat;
-  display: inline-block;
+.dog {
   width: 300px;
-  height: 500px;
-  z-index: 4;
+  height: 200px;
+  background: url("../img/dog/dog1.png") 0 0 no-repeat;
+  position: relative;
+  top: -200px;
+  animation: running-dog;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  margin-bottom: 50px;
 }
 
-.game__block:hover {
-  background: url("../img/door-1.png") 0 0 no-repeat;
+.football {
+  width: 400px;
+  height: 700px;
+  background: url("../img/football/football1.png") 0 0 no-repeat;
+  position: absolute;
+  /* z-index: 1; */
 }
 
-.game__block:nth-child(3):hover {
-  background: url("../img/cat.png") 100px 310px/100px 150px no-repeat,
-    url("../img/door-1.png") 0 0 no-repeat;
+.football:hover {
+  background: url("../img/football/football2.png") 0 0 no-repeat;
+}
+
+.football:hover .ball {
+  display: block;
+  animation: football-ball;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.ball {
+  background: url("../img/football/ball.png") 0 0 no-repeat;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 35%;
+  left: 70%;
+  display: none;
+}
+
+@keyframes football-ball {
+  0% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(2);
+  }
+  10% {
+    /* transform: scale(3) */
+  }
+  15% {
+  }
+  20% {
+  }
+  25% {
+  }
+  30% {
+  }
+  35% {
+  }
+  40% {
+  }
+  45% {
+  }
+  50% {
+  }
+  55% {
+  }
+  60% {
+  }
+  55% {
+  }
+  60% {
+  }
+  65% {
+  }
+  70% {
+  }
+  75% {
+  }
+  80% {
+  }
+  85% {
+  }
+  90% {
+  }
+  95% {
+  }
+  100% {
+  }
+}
+
+@keyframes running-dog {
+  0% {
+    background: url("../img/dog/dog2.png") 0 0 no-repeat;
+    left: 2%;
+  }
+  5% {
+    background: url("../img/dog/dog3.png") 0 0 no-repeat;
+    left: 3%;
+  }
+  10% {
+    background: url("../img/dog/dog4.png") 0 0 no-repeat;
+    left: 8%;
+  }
+  15% {
+    background: url("../img/dog/dog5.png") 0 0 no-repeat;
+    left: 10%;
+  }
+  20% {
+    background: url("../img/dog/dog6.png") 0 0 no-repeat;
+    left: 12%;
+  }
+  25% {
+    background: url("../img/dog/dog7.png") 0 0 no-repeat;
+    left: 13%;
+  }
+  30% {
+    background: url("../img/dog/dog8.png") 0 0 no-repeat;
+    left: 14%;
+  }
+  35% {
+    background: url("../img/dog/dog9.png") 0 0 no-repeat;
+    left: 16%;
+  }
+  40% {
+    background: url("../img/dog/dog10.png") 0 0 no-repeat;
+    left: 18%;
+  }
+  45% {
+    background: url("../img/dog/dog11.png") 0 0 no-repeat;
+    left: 20%;
+  }
+  50% {
+    background: url("../img/dog/dog12.png") 0 0 no-repeat;
+    left: 24%;
+  }
+  55% {
+    background: url("../img/dog/dog1.png") 0 0 no-repeat;
+    left: 28%;
+  }
+  60% {
+    background: url("../img/dog/dog2.png") 0 0 no-repeat;
+    left: 33%;
+  }
+  55% {
+    background: url("../img/dog/dog3.png") 0 0 no-repeat;
+    left: 42%;
+  }
+  60% {
+    background: url("../img/dog/dog4.png") 0 0 no-repeat;
+    left: 47%;
+  }
+  65% {
+    background: url("../img/dog/dog5.png") 0 0 no-repeat;
+    left: 50%;
+  }
+  70% {
+    background: url("../img/dog/dog6.png") 0 0 no-repeat;
+    left: 55%;
+  }
+  75% {
+    background: url("../img/dog/dog7.png") 0 0 no-repeat;
+    left: 60%;
+  }
+  80% {
+    background: url("../img/dog/dog8.png") 0 0 no-repeat;
+    left: 65%;
+  }
+  85% {
+    background: url("../img/dog/dog9.png") 0 0 no-repeat;
+    left: 70%;
+  }
+  90% {
+    background: url("../img/dog/dog10.png") 0 0 no-repeat;
+    left: 75%;
+  }
+  95% {
+    background: url("../img/dog/dog11.png") 0 0 no-repeat;
+    left: 80%;
+  }
+  100% {
+    background: url("../img/dog/dog12.png") 0 0 no-repeat;
+    left: 100%;
+  }
+}
+
+@keyframes running-man {
+  0% {
+    background: url("../img/man/step2.png") 0 0 no-repeat;
+    left: 0;
+  }
+  5% {
+    background: url("../img/man/step3.png") 0 0 no-repeat;
+    left: 3%;
+  }
+  10% {
+    background: url("../img/man/step4.png") 0 0 no-repeat;
+    left: 8%;
+  }
+  15% {
+    background: url("../img/man/step5.png") 0 0 no-repeat;
+    left: 10%;
+  }
+  20% {
+    background: url("../img/man/step6.png") 0 0 no-repeat;
+    left: 12%;
+  }
+  25% {
+    background: url("../img/man/step7.png") 0 0 no-repeat;
+    left: 13%;
+  }
+  30% {
+    background: url("../img/man/step8.png") 0 0 no-repeat;
+    left: 14%;
+  }
+  35% {
+    background: url("../img/man/step9.png") 0 0 no-repeat;
+    left: 16%;
+  }
+  40% {
+    background: url("../img/step10.png") 0 0 no-repeat;
+    left: 18%;
+  }
+  45% {
+    background: url("../img/man/step11.png") 0 0 no-repeat;
+    left: 20%;
+  }
+  50% {
+    background: url("../img/man/step12.png") 0 0 no-repeat;
+    left: 24%;
+  }
+  55% {
+    background: url("../img/man/step13.png") 0 0 no-repeat;
+    left: 28%;
+  }
+  60% {
+    background: url("../img/man/step14.png") 0 0 no-repeat;
+    left: 33%;
+  }
+  55% {
+    background: url("../img/man/step15.png") 0 0 no-repeat;
+    left: 42%;
+  }
+  60% {
+    background: url("../img/man/step16.png") 0 0 no-repeat;
+    left: 47%;
+  }
+  65% {
+    background: url("../img/man/step17.png") 0 0 no-repeat;
+    left: 50%;
+  }
+  70% {
+    background: url("../img/man/step18.png") 0 0 no-repeat;
+    left: 55%;
+  }
+  75% {
+    background: url("../img/man/step19.png") 0 0 no-repeat;
+    left: 60%;
+  }
+  80% {
+    background: url("../img/man/step20.png") 0 0 no-repeat;
+    left: 65%;
+  }
+  85% {
+    background: url("../img/man/step21.png") 0 0 no-repeat;
+    left: 70%;
+  }
+  90% {
+    background: url("../img/man/step22.png") 0 0 no-repeat;
+    left: 75%;
+  }
+  95% {
+    background: url("../img/man/step23.png") 0 0 no-repeat;
+    left: 80%;
+  }
+  100% {
+    background: url("../img/man/step24.png") 0 0 no-repeat;
+    left: 100%;
+  }
 }
