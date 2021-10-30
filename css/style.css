@@ -53,298 +53,159 @@ body {
 
 /* ------------------------------ */
 
-.man {
-  width: 500px;
-  height: 500px;
-  background: url("../img/man/step1.png") 0 0 no-repeat;
-  position: relative;
-  animation: running-man;
-  animation-duration: 7s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+.promise {
+  max-width: 1020px;
+  margin: 0 auto;
+  margin-bottom: 160px;
+}
+.promise__title {
+}
+.promise__title_first {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #5d62b5;
+  margin: 0px 0px 33px 0px;
+}
+.promise__title_first::before {
+  content: "";
+  background: url("../img/OverlineMark.svg") top left / 17px 16px no-repeat;
+  width: 17px;
+  height: 16px;
+}
+.promise__title_second {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+  margin: 0px 0px 68px 0px;
 }
 
-.dog {
-  width: 300px;
-  height: 200px;
-  background: url("../img/dog/dog1.png") 0 0 no-repeat;
-  position: relative;
-  top: -200px;
-  animation: running-dog;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  margin-bottom: 50px;
+.promise__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.promise__block {
+  max-width: 324px;
+  display: flex;
+}
+.promise__img {
+  margin: 0px 24px 0px 0px;
+}
+.promise__body {
+}
+.promise__header {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 26px;
+  color: #f2726f;
+  margin: 0px 0px 20px 0px;
+}
+.promise__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #4b4b4b;
 }
 
-.football {
-  width: 400px;
-  height: 700px;
-  background: url("../img/football/football1.png") 0 0 no-repeat;
+/* ==================================== */
+
+.stats {
+  background: #29c3be;
+}
+.stats__container {
+  max-width: 1020px;
+  min-height: 608px;
+  margin: 0 auto;
+}
+.stats__header-row {
+  display: flex;
+}
+.bg-image_stats-1 {
   position: absolute;
-  /* z-index: 1; */
+  max-width: 498px;
+  height: 315px;
+  left: 873px;
+  top: 390px;
+}
+.stats__titles {
+}
+.stats__titles-margin {
+  margin: 112px 0px 79px 0px;
+  max-width: 411px;
+}
+.stats__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0px 0px 32px 0px;
 }
 
-.football:hover {
-  background: url("../img/football/football2.png") 0 0 no-repeat;
+.stats__title::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("../img/stats/OverlineMark.svg") -4px 0 / 24px 24px no-repeat;
+  top: 0;
+  left: 0;
+  margin: 0px 16px 0px 0px;
 }
-
-.football:hover .ball {
-  display: block;
-  animation: football-ball;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+.stats__subtitle {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
 }
-
-.ball {
-  background: url("../img/football/ball.png") 0 0 no-repeat;
-  width: 200px;
-  height: 200px;
-  position: relative;
-  top: 35%;
-  left: 70%;
-  display: none;
+.stats__elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-
-@keyframes football-ball {
-  0% {
-    transform: scale(1);
-  }
-  5% {
-    transform: scale(2);
-  }
-  10% {
-    /* transform: scale(3) */
-  }
-  15% {
-  }
-  20% {
-  }
-  25% {
-  }
-  30% {
-  }
-  35% {
-  }
-  40% {
-  }
-  45% {
-  }
-  50% {
-  }
-  55% {
-  }
-  60% {
-  }
-  55% {
-  }
-  60% {
-  }
-  65% {
-  }
-  70% {
-  }
-  75% {
-  }
-  80% {
-  }
-  85% {
-  }
-  90% {
-  }
-  95% {
-  }
-  100% {
-  }
+.stats__element {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
-
-@keyframes running-dog {
-  0% {
-    background: url("../img/dog/dog2.png") 0 0 no-repeat;
-    left: 2%;
-  }
-  5% {
-    background: url("../img/dog/dog3.png") 0 0 no-repeat;
-    left: 3%;
-  }
-  10% {
-    background: url("../img/dog/dog4.png") 0 0 no-repeat;
-    left: 8%;
-  }
-  15% {
-    background: url("../img/dog/dog5.png") 0 0 no-repeat;
-    left: 10%;
-  }
-  20% {
-    background: url("../img/dog/dog6.png") 0 0 no-repeat;
-    left: 12%;
-  }
-  25% {
-    background: url("../img/dog/dog7.png") 0 0 no-repeat;
-    left: 13%;
-  }
-  30% {
-    background: url("../img/dog/dog8.png") 0 0 no-repeat;
-    left: 14%;
-  }
-  35% {
-    background: url("../img/dog/dog9.png") 0 0 no-repeat;
-    left: 16%;
-  }
-  40% {
-    background: url("../img/dog/dog10.png") 0 0 no-repeat;
-    left: 18%;
-  }
-  45% {
-    background: url("../img/dog/dog11.png") 0 0 no-repeat;
-    left: 20%;
-  }
-  50% {
-    background: url("../img/dog/dog12.png") 0 0 no-repeat;
-    left: 24%;
-  }
-  55% {
-    background: url("../img/dog/dog1.png") 0 0 no-repeat;
-    left: 28%;
-  }
-  60% {
-    background: url("../img/dog/dog2.png") 0 0 no-repeat;
-    left: 33%;
-  }
-  55% {
-    background: url("../img/dog/dog3.png") 0 0 no-repeat;
-    left: 42%;
-  }
-  60% {
-    background: url("../img/dog/dog4.png") 0 0 no-repeat;
-    left: 47%;
-  }
-  65% {
-    background: url("../img/dog/dog5.png") 0 0 no-repeat;
-    left: 50%;
-  }
-  70% {
-    background: url("../img/dog/dog6.png") 0 0 no-repeat;
-    left: 55%;
-  }
-  75% {
-    background: url("../img/dog/dog7.png") 0 0 no-repeat;
-    left: 60%;
-  }
-  80% {
-    background: url("../img/dog/dog8.png") 0 0 no-repeat;
-    left: 65%;
-  }
-  85% {
-    background: url("../img/dog/dog9.png") 0 0 no-repeat;
-    left: 70%;
-  }
-  90% {
-    background: url("../img/dog/dog10.png") 0 0 no-repeat;
-    left: 75%;
-  }
-  95% {
-    background: url("../img/dog/dog11.png") 0 0 no-repeat;
-    left: 80%;
-  }
-  100% {
-    background: url("../img/dog/dog12.png") 0 0 no-repeat;
-    left: 100%;
-  }
+.stats__images {
+  margin: 0px 12px 0px 0px;
 }
-
-@keyframes running-man {
-  0% {
-    background: url("../img/man/step2.png") 0 0 no-repeat;
-    left: 0;
-  }
-  5% {
-    background: url("../img/man/step3.png") 0 0 no-repeat;
-    left: 3%;
-  }
-  10% {
-    background: url("../img/man/step4.png") 0 0 no-repeat;
-    left: 8%;
-  }
-  15% {
-    background: url("../img/man/step5.png") 0 0 no-repeat;
-    left: 10%;
-  }
-  20% {
-    background: url("../img/man/step6.png") 0 0 no-repeat;
-    left: 12%;
-  }
-  25% {
-    background: url("../img/man/step7.png") 0 0 no-repeat;
-    left: 13%;
-  }
-  30% {
-    background: url("../img/man/step8.png") 0 0 no-repeat;
-    left: 14%;
-  }
-  35% {
-    background: url("../img/man/step9.png") 0 0 no-repeat;
-    left: 16%;
-  }
-  40% {
-    background: url("../img/step10.png") 0 0 no-repeat;
-    left: 18%;
-  }
-  45% {
-    background: url("../img/man/step11.png") 0 0 no-repeat;
-    left: 20%;
-  }
-  50% {
-    background: url("../img/man/step12.png") 0 0 no-repeat;
-    left: 24%;
-  }
-  55% {
-    background: url("../img/man/step13.png") 0 0 no-repeat;
-    left: 28%;
-  }
-  60% {
-    background: url("../img/man/step14.png") 0 0 no-repeat;
-    left: 33%;
-  }
-  55% {
-    background: url("../img/man/step15.png") 0 0 no-repeat;
-    left: 42%;
-  }
-  60% {
-    background: url("../img/man/step16.png") 0 0 no-repeat;
-    left: 47%;
-  }
-  65% {
-    background: url("../img/man/step17.png") 0 0 no-repeat;
-    left: 50%;
-  }
-  70% {
-    background: url("../img/man/step18.png") 0 0 no-repeat;
-    left: 55%;
-  }
-  75% {
-    background: url("../img/man/step19.png") 0 0 no-repeat;
-    left: 60%;
-  }
-  80% {
-    background: url("../img/man/step20.png") 0 0 no-repeat;
-    left: 65%;
-  }
-  85% {
-    background: url("../img/man/step21.png") 0 0 no-repeat;
-    left: 70%;
-  }
-  90% {
-    background: url("../img/man/step22.png") 0 0 no-repeat;
-    left: 75%;
-  }
-  95% {
-    background: url("../img/man/step23.png") 0 0 no-repeat;
-    left: 80%;
-  }
-  100% {
-    background: url("../img/man/step24.png") 0 0 no-repeat;
-    left: 100%;
-  }
+.stats__image {
+}
+.stats__content {
+  /* margin: 0px 0px 212px 0px; */
+}
+.stats__numbers {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+  margin: 0px 3px 0px 0px;
+}
+.stats__text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #5d62b5;
 }
