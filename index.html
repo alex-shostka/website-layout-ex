@@ -5,199 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>lesson_16</title>
+    <title>lesson_17</title>
   </head>
   <body>
     <div class="wrapper">
-      <header class="header"></header>
       <main class="main">
         <div class="main__container">
-          <div class="appointment">
-            <div class="appointment__container">
-              <div class="appointment__body body-appointment">
-                <div class="body-appointment__title">Make an appointment</div>
-                <div class="body-appointment__form">
-                  <form action="#" class="form-appointment">
-                    <div class="form-appointment__inputs">
-                      <input
-                        type="text"
-                        class="form-appointment__input"
-                        placeholder="Name"
-                      />
-                      <input
-                        type="text"
-                        class="form-appointment__input"
-                        placeholder="Email"
-                      />
-                      <input
-                        type="text"
-                        class="form-appointment__input"
-                        placeholder="Phone Number"
-                      />
-                      <input
-                        type="text"
-                        class="form-appointment__input"
-                        placeholder="Select Service"
-                      />
-                    </div>
-                    <textarea
-                      class="form-appointment__text"
-                      placeholder="Tell us about your puppers include his/her name"
-                    ></textarea>
-                    <div class="form-appointment__button">
-                      <button class="form-appointment__item-button">
-                        Make an Appointment
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="summary">
-            <div class="summary__container">
-              <div class="summary__body body-summary">
-                <h2 class="body-summary__title">Summary</h2>
-                <h4 class="body-summary__subtitle">
-                  Estimate Shipping and Tax
-                </h4>
-                <div class="body-summary__text">
-                  Enter your destination to get a shipping estimate.
-                </div>
-
-                <div class="body-summary__form">
-                  <form action="#" class="form-summary">
-                    <div class="form-summary__item">
-                      <label for="" class="form-summary__label">Country</label>
-                      <select name="country" id="" class="form-summary__select">
-                        <option selected value="">Australia</option>
-                      </select>
-                    </div>
-
-                    <div class="form-summary__item">
-                      <label for="" class="form-summary__label"
-                        >State/Province</label
-                      >
-                      <input type="text" class="form-summary__input" />
-                    </div>
-
-                    <div class="form-summary__item zip-postal">
-                      <label for="" class="form-summary__label"
-                        >Zip/Postal Code</label
-                      >
-                      <input type="text" class="form-summary__input" />
-                    </div>
-
-                    <div class="form-summary__item-destination">
-                      <div>
-                        <label for="" class="form-summary__label"
-                          >Standard Rate</label
-                        >
-                        <input
-                          name="destination"
-                          type="radio"
-                          class="form-summary__input-radio"
-                        />Price may vary depending on the item/destination. Shop
-                        Staff will contact you. $21.00
-                      </div>
-                      <div>
-                        <label for="" class="form-summary__label"
-                          >Pickup from store</label
-                        >
-                        <input
-                          name="destination"
-                          type="radio"
-                          class="form-summary__input-radio"
-                        />1234 Street Adress City Address, 1234 $0.00
+          <div class="fullscreen">
+            <div class="fullscreen__body">
+              <div class="fullscreen__header header _container">
+                <div class="header__info info-header">
+                  <div class="header__logo">
+                    <img src="./img/Logo-Placeholder-5.svg" alt="" />
+                  </div>
+                  <div class="header__contacts contacts-header">
+                    <div class="contacts-header__hours hours-header">
+                      <div class="hours-header__items">
+                        <div class="hours-header__item">BOARDING HOURS</div>
+                        <div class="hours-header__item">
+                          Mon - Sat: 7:00 am - 6:00 pm
+                        </div>
                       </div>
                     </div>
-
-                    <h4 class="body-summary__subtitle">Apply Discount Code</h4>
-                    <div class="form-summary__item">
-                      <label for="" class="form-summary__label"
-                        >Enter discount code</label
-                      >
-                      <input
-                        type="text"
-                        class="form-summary__input"
-                        placeholder="Enter Discount code"
-                      />
+                    <div class="contacts-header__call call-header">
+                      <div class="call-header__items">
+                        <div class="call-header__item">CALL US</div>
+                        <div class="call-header__item">(555) Pup-Cares</div>
+                      </div>
                     </div>
-
-                    <button class="body-summary__button">Apply Discount</button>
-                  </form>
+                    <div class="contacts-header__link">
+                      <a href="#">Make an Appointment</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="shipping">
-            <div class="shipping__container">
-              <div class="shipping__body body-shipping">
-                <form action="#" class="form-body">
-                  <h2 class="body-shipping__title">Shipping Address</h2>
-                  <div class="body-shipping__item">
-                    <label for="" class="body-shipping__label"
-                      >Email Address *</label
-                    >
-                    <input type="text" class="body-shipping__input" />
+                <div class="header__navbar navbar-header">
+                  <div class="navbar-header__body">
+                    <ul class="navbar-header__links">
+                      <li class="navbar-header__link">
+                        <a href="">Services</a>
+                        <ul class="navbar-header__sub-links">
+                          <li class="navbar-header__sub-link">Lorem</li>
+                          <li class="navbar-header__sub-link">Lorem</li>
+                          <li class="navbar-header__sub-link">Lorem</li>
+                          <li class="navbar-header__sub-link">Lorem</li>
+                        </ul>
+                      </li>
+                      <li class="navbar-header__link">
+                        <a href="">Specials</a>
+                      </li>
+                      <li class="navbar-header__link">
+                        <a href="">Facilities</a>
+                      </li>
+                      <li class="navbar-header__link">
+                        <a href="">Reviews</a>
+                      </li>
+                      <li class="navbar-header__link"><a href="">Shop</a></li>
+                      <li class="navbar-header__link"><a href="">About</a></li>
+                    </ul>
+                    <div class="navbar-header__icons">
+                      <div class="navbar-header__icon">
+                        <a href=""
+                          ><img src="./img/search_24px.svg" alt=""
+                        /></a>
+                      </div>
+                      <div class="navbar-header__icon">
+                        <a href=""
+                          ><img src="./img/shopping_cart_24px.svg" alt=""
+                        /></a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="body-shipping__subtitle">
-                    You can create an account after checkout.
-                  </div>
-                  <div class="body-shipping__item">
-                    <label for="" class="body-shipping__label"
-                      >First Name *</label
-                    >
-                    <input type="text" class="body-shipping__input" />
-                  </div>
-                  <div class="body-shipping__item">
-                    <label for="" class="body-shipping__label"
-                      >Last Name *</label
-                    >
-                    <input type="text" class="body-shipping__input" />
-                  </div>
-                  <div class="body-shipping__item">
-                    <label for="" class="body-shipping__label">Company *</label>
-                    <input type="text" class="body-shipping__input" />
-                  </div>
-                  <div class="body-shipping__item">
-                    <label for="" class="body-shipping__label"
-                      >Street Address *</label
-                    >
-                    <input type="text" class="body-shipping__input" />
-                    <input type="text" class="body-shipping__input" />
-                  </div>
-                  <div class="body-shipping__item">
-                    <label for="" class="body-shipping__label">City *</label>
-                    <input type="text" class="body-shipping__input" />
-                  </div>
-                  <div class="body-shipping__item">
-                    <label for="" class="body-shipping__label"
-                      >State/Province *</label
-                    >
-                    <select name="state" id="" class="body-shipping__input">
-                      <option value="" placeholder="gjbnjbnj"></option>
-                    </select>
-                  </div>
-                  <div class="body-shipping__item">
-                    <label for="" class="body-shipping__label"
-                      >Zip/Postal Code *</label
-                    >
-                    <input type="text" class="body-shipping__input" />
-                  </div>
-                  <div class="body-shipping__item">
-                    <label for="" class="body-shipping__label">Country *</label>
-                    <select name="state" id="" class="body-shipping__input">
-                      <option value="" placeholder="gjbnjbnj"></option>
-                    </select>
-                  </div>
-                  <div class="body-shipping__item">
-                    <label for="" class="body-shipping__label"
-                      >Phone Number *</label
-                    >
-                    <input type="tel" class="body-shipping__input" />
-                  </div>
-                </form>
+                </div>
               </div>
             </div>
           </div>
