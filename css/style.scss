@@ -1,0 +1,211 @@
+/* ПОДКЛЮЧАЕМ ШРИФТЫ */
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap");
+@import "_null";
+
+/* ------------------------------ */
+@mixin flexDirectionColumn() {
+  display: flex;
+  flex-direction: column;
+}
+/* ------------------------------ */
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  @include flexDirectionColumn();
+}
+
+._ibg {
+  position: relative;
+}
+._ibg img {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* ======================================================== */
+.dish {
+  // .dish__main-header
+  &__main-header {
+    display: flex;
+    justify-content: center;
+  }
+  // .dish__h2
+  &__h2 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 150px;
+    letter-spacing: 0.2em;
+    color: #303030;
+    position: relative;
+    @media (max-width: 890px) {
+      font-size: 80px;
+    }
+  }
+  // .dish__h3
+  &__h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 90px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #d9d9d9;
+    position: absolute;
+    top: 26px;
+    left: 47px;
+    @media (max-width: 890px) {
+      font-size: 20px;
+    }
+  }
+}
+
+.main {
+  // .main__container
+  &__container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+.dish {
+  // .dish__body-container
+  &__body-container {
+    @media (max-width: 1200px) {
+      padding: 0px 30px;
+    }
+  }
+  // .dish__items
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin: 0px -15px;
+  }
+  // .dish__item
+  &__item {
+    padding: 0px 15px;
+    flex: 1 1 33.333%;
+    min-width: 290px;
+  }
+}
+.item-dish {
+  @include flexDirectionColumn();
+  height: 100%;
+  background: #252525;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  position: relative;
+  // .item-dish__image-block
+  &__image-block {
+    padding: 0px 0px 74.28% 0px;
+    &:not(:last-child) {
+      margin: 0px 0px 29px 0px;
+    }
+  }
+  &__image-arrow {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 24px;
+    right: 24px;
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+
+  // .item-dish__image
+  &__image {
+  }
+  // .item-dish__body
+  &__body {
+    flex: 1 1 auto;
+    @include flexDirectionColumn();
+    padding: 29px 30px;
+  }
+  // .item-dish__title
+  &__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 30px;
+    color: #d9d9d9;
+  }
+  // .item-dish__subtitle
+  &__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.15px;
+    color: #a4a8b2;
+    &:not(:last-child) {
+      margin: 0px 0px 20px 0px;
+    }
+  }
+  // .item-dish__description
+  &__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1625px;
+    color: #85878c;
+    flex: 1 1 auto;
+    &:not(:last-child) {
+      margin: 0px 0px 30px 0px;
+    }
+  }
+  // .item-dish__links
+  &__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  // .item-dish__link
+  &__link {
+  }
+  .link-raiting {
+    // .link-raiting__star
+    display: flex;
+    align-items: center;
+    &__star {
+      background: url("../img/ic_star_border.svg") 0 0 no-repeat;
+      width: 20px;
+      height: 19px;
+      display: block;
+      margin: 0px 5px 0px 0px;
+      cursor: pointer;
+    }
+  }
+}
+.link-raiting {
+}
+.link-button {
+  // .link-button__button
+  &__button {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    background: #262626;
+    border: 2px solid #303030;
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: block;
+    padding: 0px 32px;
+    cursor: pointer;
+    &:hover {
+      background: #34c759;
+      color: #252525;
+    }
+  }
+}
